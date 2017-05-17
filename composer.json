@@ -1,0 +1,17 @@
+{
+  "repositories": [
+    {
+      "type":"package",
+      "package": {
+        "name": "golkowybenqu/page-bundle",
+        "version":"master",
+        "source": {
+          "url": "https://github.com/GolkowyBenQu/PageBundle.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
+
+    }
+  ]
+}
