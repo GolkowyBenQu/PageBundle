@@ -1,0 +1,4 @@
+PageBundle\Entity\StaticPage:
+    file:
+        mapping: page_image
+        filename_property: path

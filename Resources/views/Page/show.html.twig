@@ -1,0 +1,33 @@
+{% extends 'CmsAppBundle::layout.html.twig' %}
+
+{% block content %}
+    <!-- *****************************************************************************************************************
+	 PAGE TITLE
+	 ***************************************************************************************************************** -->
+    <div id="blue">
+        <div class="container">
+            <div class="row">
+                <h3>{{ page.getTitle() }}.</h3>
+            </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /blue -->
+
+
+    <!-- *****************************************************************************************************************
+     PAGE CONTENT
+     ***************************************************************************************************************** -->
+
+    <div class="container mtb">
+        <div class="row">
+            <div class="col-lg-6">
+                {% if page.getPath() is not null %}
+                    <img class="img-responsive" src="{{ asset(static_image_path ~ page.getPath()) }}" />
+                {% endif %}
+            </div>
+
+            <div class="col-lg-6">
+                {{ page.getContent()|raw }}
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+{% endblock %}

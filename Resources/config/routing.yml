@@ -1,0 +1,3 @@
+page_show:
+    path:     /{slug}
+    defaults: { _controller: "PageBundle:Page:show" }
