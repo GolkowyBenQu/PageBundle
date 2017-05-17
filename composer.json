@@ -1,17 +1,25 @@
 {
+  "name": "golkowybenqu/page-bundle",
+  "license": "MIT",
+  "type": "project",
+  "description": "The Symfony Page Bundle",
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/symfony": "3.1.*",
+    "doctrine/orm": "^2.5",
+    "doctrine/doctrine-bundle": "^1.6",
+    "doctrine/doctrine-cache-bundle": "^1.2",
+    "vich/uploader-bundle": "^1.2"
+  },
   "repositories": [
     {
-      "type":"package",
-      "package": {
-        "name": "golkowybenqu/page-bundle",
-        "version":"master",
-        "source": {
-          "url": "https://github.com/GolkowyBenQu/PageBundle.git",
-          "type": "git",
-          "reference":"master"
-        }
-      }
-
+      "url": "https://github.com/GolkowyBenQu/PageBundle.git",
+      "type": "git"
     }
-  ]
+  ],
+  "config": {
+    "platform": {
+      "php": "5.5.9"
+    }
+  }
 }
