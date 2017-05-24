@@ -1,0 +1,15 @@
+parameters:
+    pages_repository.class: Apsensa\PageBundle\Infrastructure\Doctrine\ORM\DoctrinePageRepository
+    pages_query.class: Apsensa\PageBundle\Infrastructure\Doctrine\ORM\DoctrinePageQuery
+    new_page_handler.class: Apsensa\PageBundle\Application\Command\CreateNewPageHandler
+
+services:
+    pages_repository:
+        class: %pages_repository.class%
+        arguments: [ '@doctrine.orm.entity_manager' ]
+    pages_query:
+        class: %pages_query.class%
+        arguments: [ '@doctrine.orm.entity_manager' ]
+    new_page_handler:
+        class: %new_page_handler.class%
+        arguments: [ '@pages_repository' ]

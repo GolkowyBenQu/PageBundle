@@ -1,0 +1,6 @@
+Apsensa\PageBundle\Domain\Page\Slug:
+    type: embeddable
+    fields:
+        slug:
+            type: string
+            length: 255

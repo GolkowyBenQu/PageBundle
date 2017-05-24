@@ -1,0 +1,6 @@
+Apsensa\PageBundle\Domain\Page\Title:
+    type: embeddable
+    fields:
+        title:
+            type: string
+            length: 255

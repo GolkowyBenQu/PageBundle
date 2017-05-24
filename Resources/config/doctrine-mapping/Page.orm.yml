@@ -1,0 +1,18 @@
+Apsensa\PageBundle\Domain\Page:
+    type:  entity
+    table: cms_page
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    embedded:
+        title:
+            class: Apsensa\PageBundle\Domain\Page\Title
+            columnPrefix: false
+        slug:
+            class: Apsensa\PageBundle\Domain\Page\Slug
+            columnPrefix: false
+        content:
+            class: Apsensa\PageBundle\Domain\Page\Content
+            columnPrefix: false

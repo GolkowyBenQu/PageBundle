@@ -1,0 +1,5 @@
+Apsensa\PageBundle\Domain\Page\Content:
+    type: embeddable
+    fields:
+        content:
+            type: text

@@ -1,11 +1,18 @@
 {
-  "name": "golkowybenqu/page-bundle",
+  "name": "apsensa/page-bundle",
   "license": "MIT",
-  "type": "project",
+  "type": "symfony-bundle",
   "description": "The Symfony Page Bundle",
+  "keywords": ["page", "symfony", "bundle"],
+  "authors": [
+    {
+      "name": "Przemyslaw Golec",
+      "email": "golec.przemyslaw@gmail.com"
+    }
+  ],
   "require": {
     "php": ">=5.5.9",
-    "symfony/symfony": "3.1.*",
+    "symfony/symfony": "3.*.*",
     "doctrine/orm": "^2.5",
     "doctrine/doctrine-bundle": "^1.6",
     "doctrine/doctrine-cache-bundle": "^1.2",
@@ -13,13 +20,13 @@
   },
   "repositories": [
     {
-      "url": "https://github.com/GolkowyBenQu/PageBundle.git",
+      "url": "https://explodus@bitbucket.org/explodus/pagebundle.git",
       "type": "git"
     }
   ],
-  "config": {
-    "platform": {
-      "php": "5.5.9"
+  "autoload": {
+    "psr-4": {
+      "Apsensa\\PageBundle\\": ""
     }
   }
 }
